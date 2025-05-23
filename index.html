@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rushi Patil - Portfolio and Trendy Tees Shop" />
+  <meta name="author" content="Rushi Patil" />
+  <meta property="og:title" content="Rushi Patil Portfolio & Shop" />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:description" content="Personal introduction and shopping site." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Rushi Patil Portfolio & Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.0/dist/full.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-base-100 text-gray-900 font-sans">
+  <div id="loading" class="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center">
+    <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-purple-600"></div>
+  </div>
+
+  <header class="bg-gradient-to-r from-purple-700 to-pink-600 text-white p-4 flex justify-between items-center shadow-xl">
+    <h1 class="text-2xl font-extrabold tracking-wide">Rushi Patil</h1>
+    <nav class="hidden md:flex space-x-6 text-lg">
+      <a href="#about" class="hover:text-yellow-300 transition duration-300">About</a>
+      <a href="#achievements" class="hover:text-yellow-300 transition duration-300">Achievements</a>
+      <a href="#goals" class="hover:text-yellow-300 transition duration-300">Goals</a>
+      <a href="#personal" class="hover:text-yellow-300 transition duration-300">Personal</a>
+      <a href="#contact" class="hover:text-yellow-300 transition duration-300">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden focus:outline-none">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <div id="mobileMenu" class="md:hidden hidden p-4 bg-purple-700 text-white space-y-4 text-center">
+    <a href="#about" class="block">About</a>
+    <a href="#achievements" class="block">Achievements</a>
+    <a href="#goals" class="block">Goals</a>
+    <a href="#personal" class="block">Personal</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+
+  <section class="p-8 text-center bg-gradient-to-br from-yellow-200 via-pink-100 to-purple-100 rounded-xl shadow-xl mx-4 mt-6">
+    <h2 class="text-4xl font-extrabold mb-4 text-purple-700">Welcome!</h2>
+    <img src="photo.jpg" alt="Profile Photo" class="w-40 h-40 mx-auto rounded-full border-4 border-pink-300 shadow-md mb-4" />
+    <p class="mb-2 font-semibold text-purple-700 text-lg">Motivational Video</p>
+    <div class="mx-auto rounded-lg shadow-lg max-w-xl aspect-video overflow-hidden">
+      <iframe 
+        src="https://www.youtube.com/embed/ZXsQAXx_ao0" 
+        title="Motivational Video" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen 
+        class="w-full h-full"
+      ></iframe>
+    </div>
+  </section>
+
+  <section id="about" class="p-8 bg-white rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-pink-300">
+    <h2 class="text-3xl font-bold mb-4 text-pink-700">About Me</h2>
+    <ul class="list-disc pl-6">
+      <li>Name: Rushi Patil</li>
+      <li>Location: Palghar, Maharashtra, India</li>
+      <li>Education: B.Tech in Computer Science</li>
+      <li>Languages: English, Hindi, Marathi</li>
+    </ul>
+  </section>
+
+  <section id="achievements" class="p-8 bg-yellow-50 rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-purple-300">
+    <h2 class="text-3xl font-bold mb-4 text-purple-700">Achievements</h2>
+    <ul class="list-disc pl-6">
+      <li>Won Blind C compatation in college (2024)</li>
+      <li>Volunteered at ABC NGO, teaching coding 2023</li>
+      <li>Completed Full-Stack Developer Bootcamp 2024</li>
+      <li>Played At National Level in Kabaddi</li>
+    </ul>
+  </section>
+
+  <section id="goals" class="p-8 bg-white rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-pink-300">
+    <h2 class="text-3xl font-bold mb-4 text-pink-700">Future Goals</h2>
+    <p class="text-lg leading-relaxed">I aim to become a full-stack developer and contribute to open-source projects...</p>
+  </section>
+
+  <section id="personal" class="p-8 bg-gradient-to-bl from-pink-100 to-purple-100 rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-purple-300">
+    <h2 class="text-3xl font-bold mb-4 text-purple-700">Personal Side</h2>
+    <ul class="list-disc pl-6">
+      <li>Hobbies: Coding, Cycling, Sports</li>
+      <li>Role Models: Bill Gates - for innovation</li>
+      <li>Favorite Books: "Atomic Habits", "Deep Work"</li>
+      <li>Favorite Startups: Notion, Figma</li>
+      <li>Volunteering: Taught coding in rural schools</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="p-8 bg-white rounded-lg shadow-xl mx-4 mt-6 border-l-4 border-pink-300">
+    <h2 class="text-3xl font-bold mb-4 text-pink-700">Contact Me</h2>
+    <div class="space-y-2">
+      <p>Phone: <a href="tel:+911234567890" class="text-blue-600">+91 1234567890</a></p>
+      <p>WhatsApp: <a href="https://wa.me/911234567890" class="text-green-600">Chat on WhatsApp</a></p>
+      <p>Email: <a href="mailto:Rushi@example.com" class="text-red-600">Rushi@example.com</a></p>
+    </div>
+  </section>
+
+  <section class="p-8 bg-base-200 mt-10 rounded-lg shadow-xl mx-4">
+    <h2 class="text-3xl font-bold mb-4 text-purple-700">📍 Location & Social Links</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-lg overflow-hidden">
+        <iframe class="w-full h-64 border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.136981717121!2d72.75462341490428!3d19.186404787011845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b08a290ff0e3%3A0xc82eb1a5f6e0b9c5!2sPalghar%2C%20Maharashtra%20401404!5e0!3m2!1sen!2sin!4v1623162828043!5m2!1sen!2sin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="flex flex-col space-y-3 justify-center items-center">
+        <a href="https://www.linkedin.com/in/Rushipatil" class="btn btn-outline w-full">🔗 LinkedIn</a>
+        <a href="https://github.com/Rushipatil" class="btn btn-outline w-full">💻 GitHub</a>
+        <a href="https://www.instagram.com/Rushipatil" class="btn btn-outline w-full">📸 Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💎 Shop Button -->
+  <div class="text-center mt-10">
+    <button 
+      onclick="showShop()" 
+      class="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-white transition-all duration-300 bg-gradient-to-r from-blue-500 via-red-500 to-grey-500 rounded-2xl shadow-lg hover:shadow-pink-500/50 hover:scale-105 animate-bounce group"
+    >
+      <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-40 group-hover:h-40 opacity-10"></span>
+      <span class="relative z-10 text-xl">🛍️ Visit Trendy Tees Store </span>
+    </button>
+  </div>
+
+  <!-- SHOP SECTION -->
+  <section id="shop" class="p-6 bg-base-200 mt-10 hidden">
+    <h2 class="text-4xl text-center font-extrabold mb-6">🛍️ Trendy Tees Shop</h2>
+    <div class="text-center mb-4">
+      <button onclick="toggleTheme()" class="btn btn-accent">🌓 Theme</button>
+      <button class="btn btn-neutral ml-2" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </div>
+    <div id="products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"></div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div id="cart" class="fixed top-0 right-0 w-80 h-full bg-base-100 border-l p-6 hidden z-50 overflow-y-auto shadow-lg">
+    <h2 class="text-xl font-bold mb-4">Your Cart</h2>
+    <div id="cart-items"></div>
+    <p class="mt-4 font-bold">Total: $<span id="cart-total">0.00</span></p>
+    <button class="btn btn-success mt-4 w-full">Checkout</button>
+    <button class="btn btn-outline mt-2 w-full" onclick="toggleCart()">Close</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+    window.addEventListener('load', () => {
+      document.getElementById('loading').style.display = 'none';
+    });
+
+    const scrollBtn = document.createElement('button');
+    scrollBtn.innerHTML = '⬆️';
+    scrollBtn.className = 'fixed bottom-4 right-4 btn btn-circle btn-secondary text-xl';
+    scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.appendChild(scrollBtn);
+
+    function showShop() {
+      const shop = document.getElementById('shop');
+      shop.classList.remove('hidden');
+      shop.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const products = [
+      { name: 'Classic Tee', price: 19.99, img: 'https://www.thewalkdeal.com/cdn/shop/products/Never-Give-Up-TheFight.jpg?v=1640673347' },
+      { name: 'Vintage Tee', price: 24.99, img: 'https://img.freepik.com/premium-vector/vector-vintage-tshirt-design-template_637269-133.jpg?w=2000' },
+      { name: 'Graphic Tee', price: 21.99, img: 'https://www.thewalkdeal.com/cdn/shop/products/Alone-NavyBlue.jpg?v=1640675727' },
+      { name: 'Tie Dye Tee', price: 22.99, img: 'https://i0.wp.com/kidsup.in/wp-content/uploads/2022/03/Kidsup_Armani_8NHTN5.png?fit=1400%2C1600&ssl=1' },
+      { name: 'Oversized Tee', price: 26.99, img: 'https://th.bing.com/th/id/OIP.E8L0kkJILrHlgtCGrkT_PAHaHa?cb=iwp2&rs=1&pid=ImgDetMain' },
+      { name: 'Logo Tee', price: 18.99, img: 'https://th.bing.com/th/id/OIP.9bW3UWs669to7AG-qx_B3wHaHa?cb=iwp2&rs=1&pid=ImgDetMain' },
+      { name: 'Premium Tee', price: 29.99, img: 'https://inspiredtees.in/cdn/shop/files/107.jpg?v=1728386547&width=990' },
+      { name: 'Sports Tee', price: 23.99, img: 'https://th.bing.com/th/id/OIP.-k0azWcd2R6KzcjI1W0pIAHaJ1?o=7&cb=iwp2rm=3&rs=1&pid=ImgDetMain' }
+    ];
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const cartItems = document.getElementById('cart-items');
+      const cartCount = document.getElementById('cart-count');
+      const cartTotal = document.getElementById('cart-total');
+      cartItems.innerHTML = '';
+      let total = 0;
+      cart.forEach((item, index) => {
+        total += item.price;
+        cartItems.innerHTML += `<div class="flex justify-between items-center mb-2">
+          <span>${item.name} - $${item.price.toFixed(2)}</span>
+          <button class="btn btn-sm btn-error" onclick="removeFromCart(${index})">✖️</button>
+        </div>`;
+      });
+      cartCount.textContent = cart.length;
+      cartTotal.textContent = total.toFixed(2);
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartUI();
+    }
+
+    function toggleCart() {
+      document.getElementById('cart').classList.toggle('hidden');
+      updateCartUI();
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme");
+      const newTheme = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById('products');
+      products.forEach(p => {
+        container.innerHTML += `
+          <div class="card bg-base-100 shadow-xl hover:scale-105 transition-transform duration-300">
+            <figure><img src="${p.img}" alt="${p.name}" class="object-cover h-48 w-full" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">${p.name}</h2>
+              <p class="text-lg">$${p.price}</p>
+              <button class="btn btn-primary mt-2" onclick="addToCart('${p.name}', ${p.price})">Add to Cart</button>
+            </div>
+          </div>
+        `;
+      });
+      updateCartUI();
+    });
+  </script>
+</body>
+</html>
